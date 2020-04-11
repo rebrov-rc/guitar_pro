@@ -1,0 +1,236 @@
+html, * {
+  margin: 0;
+  padding: 0;
+}
+
+*, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(134, 131, 127, 0.144);
+}
+
+:before, :after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page {
+  max-width: 1287px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+  background-color: #f8f8f8;
+  background-color: #ffffff02;
+}
+
+.section-center-header {
+  max-width: 100%;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.267);
+}
+
+.flex-reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flx-row-bet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flx-row-bet-str {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flx-cul-bet-str {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flx-cul-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-wrap {
+  width: 100%;
+  min-height: 2em;
+  background-color: #6b6660;
+}
+
+.footer-wrap {
+  width: 100%;
+  min-height: 2em;
+  background-color: #29241e;
+}
+
+.baner {
+  width: 100%;
+  height: 30em;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 1em;
+  background-color: #fff;
+}
+
+.baner .img-wrap {
+  width: 100%;
+}
+
+.baner .img-wrap img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+
+section {
+  width: 95%;
+  margin: auto;
+}
+
+.catalog-wrap {
+  padding: 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.producr-cart {
+  width: calc(13em + 5vw);
+  margin-bottom: 1em;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.233);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.233);
+  margin-right: 4em;
+  margin-left: 2em;
+}
+
+.producr-cart__title {
+  width: 90%;
+  min-height: 2em;
+  margin-top: .5em;
+}
+
+.producr-cart__title span {
+  font-size: large;
+}
+
+.producr-cart__img {
+  cursor: pointer;
+  height: 400px;
+  width: 260px;
+}
+
+.producr-cart__img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.producr-cart__cost {
+  width: 90%;
+  margin-top: .5em;
+}
+
+.producr-cart__btn {
+  width: 90%;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.producr-cart__btn .btn {
+  cursor: pointer;
+  width: 10em;
+  height: 2.5em;
+  line-height: 1em;
+  color: #fff;
+  background-color: #51595a;
+}
+/*# sourceMappingURL=main.css.map */
