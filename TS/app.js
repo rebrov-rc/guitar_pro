@@ -37,6 +37,10 @@ else if (numIndex > 0) {
     addProd.innerText = numIndex;
     addProdWrap.style.display = 'flex';
 }
+if (numIndex < 0) {
+    numIndex = 0;
+}
+;
 console.log(numIndex);
 btn.forEach(function (item, i) {
     item.onclick = function () {

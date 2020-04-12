@@ -1,0 +1,26 @@
+@import 'null';
+@import 'header';
+@import 'footer';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+// font-family: 'Dancing Script', cursive;
+// ============
+.page{
+
+    background-color: #fff;
+}
+// =====
+.prod-container{
+    display: flex;
+    flex-direction: column;
+    div{
+        // border: solid 1px;
+    }
+    .block-1{
+        width: 100%;
+        height: 3em;
+        border-bottom: 1.5px solid rgba(134, 131, 127, 0.253);
+    }
+}
+.prod-img-line{
+    flex-wrap: wrap;
+}

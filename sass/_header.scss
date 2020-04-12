@@ -2,7 +2,7 @@
 
 .header-wrap{
     width: 100%;
-    min-height: 4em;
+    min-height: 3em;
     // 
     background-color: rgb(82, 79, 78);
     background-color: rgb(48, 45, 44);
@@ -31,7 +31,7 @@ nav{
 .cart-wrap{
     cursor: pointer; 
     position: relative;
-    min-height: 4em;
+    min-height: 3em;
     width: 5em;
     margin-right: 10%;
     // 
@@ -41,11 +41,11 @@ nav{
 }
 .addProdWrap{
     position: absolute;
-    top: .5em;
+    top: .3em;
     right: .7em;
     background-color: rgb(199, 65, 65);
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.4em;
+    height: 1.4em;
     border-radius: 50%;
     // 
     display: none;
@@ -58,5 +58,5 @@ nav{
     position: relative;
     left: -0.1em;
     color: rgb(223, 220, 219);
-    font-size: 1.6em;
+    font-size: 1.4em;
 }

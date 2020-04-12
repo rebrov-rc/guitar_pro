@@ -49,7 +49,7 @@ catalog.forEach(({id,name,img,prise}, i) => {
     }
 )
 
-let numIndex: number;
+let numIndex;                       
 numIndex = localStorage.getItem('add');
 if( numIndex === 0 ){
     addProdWrap.style.display = 'none';
@@ -60,6 +60,8 @@ if( numIndex === 0 ){
     addProd.innerText =  numIndex;
     addProdWrap.style.display = 'flex';
 }
+
+if ( numIndex < 0 ){numIndex = 0};
 
 console.log(numIndex)
 btn.forEach((item, i)  => {

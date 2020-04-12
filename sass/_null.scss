@@ -42,7 +42,7 @@ body{
     margin: 0;
     padding: 0;
     // background-color: rgba(240, 240, 240, 0.966);
-    background-color: rgba(134, 131, 127, 0.144);
+    background-color: rgba(134, 131, 127, 0.096);
 }
 :before, :after{
     margin: 0;
@@ -76,6 +76,9 @@ body{
     display: block;
     // 
     background-color: rgba(0, 0, 0, 0.267);
+}
+.flex{
+    display: flex;
 }
 .flex-reg{
     display: flex;
