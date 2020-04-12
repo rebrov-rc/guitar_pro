@@ -78,11 +78,12 @@ section{
     // 
     background-color: #fff;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.233);
-    // border: solid 1px;
 
     // =================
-        margin-right: 4em;
-        margin-left: 2em;
+        // margin-right: 4em;
+        // margin-left: 2em;
+        margin-right: calc( 3vw);
+        margin-left: calc( 3vw);
     // =================
     &__title{
         // border: solid 1px;

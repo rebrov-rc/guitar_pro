@@ -1,17 +1,16 @@
-const cotalogWrap: HTMLElement = document.querySelector('.catalog-wrap')
-
+const cotalogWrap: HTMLElement = document.querySelector('.catalog-wrap');
+const addProd: HTMLElement = document.querySelector('.addProduct');
+const addProdWrap: HTMLElement = document.querySelector('.addProdWrap');
 let idProd: string[] = [];
 
 
-// console.log(catalog[0].img)
 let storageGet = localStorage.getItem('storageI');
 let parsed = JSON.parse(storageGet);
-// console.log(storageGet)
-idProd = parsed
-console.log(idProd)
+if ( parsed === null ) parsed = [];
+idProd = parsed;
 
 
-catalog.forEach(({id,name,img,prise}, i) => {
+catalog.forEach(({id,name,img,prise}, i ) => {
 
     cotalogWrap.innerHTML += `
         <div class="producr-cart">
@@ -50,8 +49,22 @@ catalog.forEach(({id,name,img,prise}, i) => {
     }
 )
 
+let numIndex: number;
+numIndex = localStorage.getItem('add');
+if( numIndex === 0 ){
+    addProdWrap.style.display = 'none';
+}else if( numIndex === null ){
+    addProdWrap.style.display = 'none';
+}else if( numIndex > 0 ){ 
+    
+    addProd.innerText =  numIndex;
+    addProdWrap.style.display = 'flex';
+}
+
+console.log(numIndex)
 btn.forEach((item, i)  => {
         item.onclick = () => {
+
             let check = idProd.indexOf(catalog[i].id)
             if ( check === -1 ) {
                     idProd.push(catalog[i].id);
@@ -61,11 +74,17 @@ btn.forEach((item, i)  => {
                         idProd.splice(check , 1);
                         localStorage.setItem('storageI', JSON.stringify(idProd));
                         // ==================
+                        numIndex--;
+                        addProd.innerText = numIndex;
+                        // ==================
                         btn[i].style.backgroundColor = '';
                         btn[i].innerHTML = 'купить';
                     }else {
                         btn[i].style.backgroundColor = 'rgb(204, 109, 0)';
                         btn[i].innerHTML = 'Убрать из корзины';
+                        // =============================
+                        numIndex++;
+                        addProd.innerText = numIndex;
                     }
             } else {
                 idProd.splice(check , 1);
@@ -73,7 +92,16 @@ btn.forEach((item, i)  => {
                 // ==================
                 btn[i].style.backgroundColor = '';
                 btn[i].innerHTML = 'купить';
+                // ==================
+                numIndex--;
+                addProd.innerText = numIndex;              
             }
+            // ====
+            if( numIndex > 0 ) {
+                addProdWrap.style.display = 'flex';
+            }else { addProdWrap.style.display = 'none'; }
+            // 
+            localStorage.add = numIndex;
         }
     }
 )

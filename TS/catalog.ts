@@ -43,6 +43,12 @@ const catalog: {} = [
         name: 'ЭЛЕКТРОГИТАРА SCHECTER OMEN-6 BLK',
         img: 'https://spb-music.ru/upload/resize_cache/iblock/c9d/440_400_1/c9dc83252cdbe28c3280856b5db921e0.jpg',
         prise: '$ 1490'
+    },
+    {
+        id: 'el8',
+        name: 'ЭЛЕКТРОГИТАРА SCHECTER C-7 DELUXE SBK',
+        img: 'https://spb-music.ru/upload/resize_cache/iblock/f9e/440_400_1/f9e71cb423bb989a81aebb8fa81d9250.jpg',
+        prise: '$ 5550'
     }
     
 ]
