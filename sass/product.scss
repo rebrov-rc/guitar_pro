@@ -21,6 +21,38 @@
         border-bottom: 1.5px solid rgba(134, 131, 127, 0.253);
     }
 }
+.prod-img-block{
+    width: 50%;
+    height: 35em;
+    border: solid 1px;
+
+}
+.prod-img-demo{
+    padding: 1em;
+    border: solid 1px;
+}
 .prod-img-line{
     flex-wrap: wrap;
+    div{
+        margin-top: 1em;
+
+        img{
+            object-fit: contain;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+// ==============================================
+.prod-cost-block{
+    border: solid 1px;
+    width: 50%;
+    align-items: center;
+    justify-content: stretch;
+    // 
+    &__center{
+        width: 100%;
+        border: solid 1px;
+        height: 90%;
+    }
 }
