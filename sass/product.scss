@@ -1,20 +1,24 @@
-@import 'null';
-@import 'header';
-@import 'footer';
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+// @import 'null';
+// @import 'header';
+// @import 'footer';
+// @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 // font-family: 'Dancing Script', cursive;
 // ============
-.page{
+// .page{
 
-    background-color: #fff;
-}
+    // background-color: #fff;
+// }
 // =====
+section{
+    width: 100%;
+    padding-bottom: 3em;
+}
 .prod-container{
     display: flex;
     flex-direction: column;
-    div{
+    // div{
         // border: solid 1px;
-    }
+    // }
     .block-1{
         width: 100%;
         height: 3em;
@@ -24,12 +28,19 @@
 .prod-img-block{
     width: 50%;
     height: 35em;
-    border: solid 1px;
+    // border: solid 1px;
 
 }
 .prod-img-demo{
     padding: 1em;
-    border: solid 1px;
+    height: calc(20em + 6vw);
+    // border: solid 1px;
+    // 
+    img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
 }
 .prod-img-line{
     flex-wrap: wrap;
@@ -45,14 +56,14 @@
 }
 // ==============================================
 .prod-cost-block{
-    border: solid 1px;
+    // border: solid 1px;
     width: 50%;
     align-items: center;
     justify-content: stretch;
     // 
     &__center{
         width: 100%;
-        border: solid 1px;
+        // border: solid 1px;
         height: 90%;
     }
 }

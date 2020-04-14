@@ -1,197 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-html, * {
-  margin: 0;
-  padding: 0;
-}
-
-*, body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: rgba(134, 131, 127, 0.096);
-}
-
-:before, :after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.page {
-  max-width: 1287px;
+section {
   width: 100%;
-  min-height: 100vh;
-  margin: auto;
-  position: relative;
-  background-color: #f8f8f8;
-  background-color: #ffffff02;
-}
-
-.section-center-header {
-  max-width: 100%;
-  margin: auto;
-  height: 100%;
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.267);
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.flex-reg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flx-row-bet {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flx-row-bet-str {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.flx-cul-bet-str {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.flx-cul-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-wrap {
-  width: 100%;
-  min-height: 3em;
-  background-color: #524f4e;
-  background-color: #302d2c;
-}
-
-nav {
-  margin-left: 10%;
-  width: 30%;
-}
-
-.nav-wrap a {
-  color: whitesmoke;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.cart-wrap {
-  cursor: pointer;
-  position: relative;
-  min-height: 3em;
-  width: 5em;
-  margin-right: 10%;
-  background-color: #868f85;
-  background-color: rgba(112, 110, 110, 0.945);
-}
-
-.addProdWrap {
-  position: absolute;
-  top: .3em;
-  right: .7em;
-  background-color: #c74141;
-  width: 1.4em;
-  height: 1.4em;
-  border-radius: 50%;
-  display: none;
-}
-
-.addProdWrap .addProduct {
-  color: white;
-}
-
-.fa-shopping-cart {
-  position: relative;
-  left: -0.1em;
-  color: #dfdcdb;
-  font-size: 1.4em;
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-.footer-wrap {
-  width: 100%;
-  min-height: 2em;
-  background-color: #29241e;
-}
-
-.page {
-  background-color: #fff;
+  padding-bottom: 3em;
 }
 
 .prod-container {
@@ -213,12 +22,18 @@ footer {
 .prod-img-block {
   width: 50%;
   height: 35em;
-  border: solid 1px;
 }
 
 .prod-img-demo {
   padding: 1em;
-  border: solid 1px;
+  height: calc(20em + 6vw);
+}
+
+.prod-img-demo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .prod-img-line {
@@ -238,7 +53,6 @@ footer {
 }
 
 .prod-cost-block {
-  border: solid 1px;
   width: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -250,7 +64,6 @@ footer {
 
 .prod-cost-block__center {
   width: 100%;
-  border: solid 1px;
   height: 90%;
 }
 /*# sourceMappingURL=product.css.map */

@@ -198,158 +198,71 @@ footer {
   background-color: #29241e;
 }
 
-.logo-wrap {
-  width: 25em;
-  height: 7em;
-  padding: 1em 2em;
-  position: absolute;
-  top: 2em;
-  left: 0;
-  background-color: rgba(61, 57, 55, 0.699);
-  -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.233);
-          box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.233);
+.page {
+  background-color: #fff;
 }
 
-.logo-wrap .logo {
-  color: #fff;
-  font-size: 4em;
-  font-family: 'Dancing Script', cursive;
-}
-
-.baner {
+.pay-added-prod-wrap {
+  margin-top: 3em;
   position: relative;
-  width: 100%;
-  max-height: 35em;
-  overflow: hidden;
-  margin: auto;
+  min-height: 30em;
+}
+
+.pay-added-products {
+  min-height: 400px;
+}
+
+.pay-added-products__each-item {
   margin-top: 1em;
-  background-color: #fff;
+  border-top: 1.5px solid #e7e7e7;
+  border-bottom: 1.5px solid #e7e7e7;
+  width: 80%;
+  min-height: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.baner .img-wrap {
-  width: 100%;
+.each-item-remove {
+  margin-right: 5%;
 }
 
-.baner .img-wrap img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: 100%;
-}
-
-.text {
-  position: absolute;
-  height: 150px;
-  z-index: 10;
-  color: whitesmoke;
-  padding: 1.2em;
-}
-
-.text span {
-  font-size: 2em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.text-1 {
-  width: 270px;
-  bottom: 19em;
-  right: 5em;
-  background-color: #bdcbd3;
-  background-color: rgba(68, 160, 132, 0.603);
-}
-
-.text-2 {
-  width: 150px;
-  background-color: rgba(255, 166, 0, 0.712);
-  bottom: 8em;
-  left: 23em;
-}
-
-.text-2 span {
-  font-size: 3em;
-}
-
-section {
-  width: 95%;
-  margin: auto;
-}
-
-.catalog-wrap {
-  padding: 3em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.producr-cart {
-  width: calc(13em + 5vw);
-  margin-bottom: 1em;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
-  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.233);
-          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.233);
-  margin-right: calc( 2vw);
-  margin-left: calc( 2vw);
-}
-
-.producr-cart__title {
-  width: 90%;
-  min-height: 2em;
-  margin-top: .5em;
-}
-
-.producr-cart__title span {
-  font-size: large;
-}
-
-.producr-cart__img {
+.each-item-remove span {
   cursor: pointer;
-  height: 400px;
-  width: 260px;
 }
 
-.producr-cart__img img {
+.each-item-img-wrap {
+  width: 100px;
+  height: 95px;
+  margin-left: 4%;
+}
+
+.each-item-img-wrap img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
-.producr-cart__cost {
-  width: 90%;
-  margin-top: .5em;
+.each-item-name {
+  width: calc(12em + 4vw);
+  color: grey;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.producr-cart__btn {
-  width: 90%;
-  margin-top: .5em;
-  margin-bottom: 1em;
+.pay-added-prod__total-sum {
+  margin: auto;
+  width: 80%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.producr-cart__btn .btn {
-  cursor: pointer;
-  width: 10em;
-  height: 2.5em;
-  line-height: 1em;
-  color: #fff;
-  background-color: #51595a;
-  -webkit-box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.233);
-          box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.233);
+.pay-added-prod__total-sum span {
+  height: 40px;
+  width: 120px;
+  border: solid 1.5px #cfcfcf;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=pay.css.map */

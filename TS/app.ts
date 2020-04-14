@@ -2,6 +2,15 @@ const cotalogWrap: HTMLElement = document.querySelector('.catalog-wrap');
 const addProd: HTMLElement = document.querySelector('.addProduct');
 const addProdWrap: HTMLElement = document.querySelector('.addProdWrap');
 let idProd: string[] = [];
+const section: HTMLElement = document.querySelector('section');
+const page: HTMLElement = document.querySelector('.page');
+
+
+const home: HTMLElement = document.querySelector('.home');
+home.onclick = () => {
+    window.location.href = '../pages/home.html'
+}
+
 
 
 let storageGet = localStorage.getItem('storageI');
@@ -40,7 +49,7 @@ catalog.forEach(({id,name,img,prise}, i) => {
         // ============================================
         for (let n = 0; n < parsed.length; n++) {  
             if (id === parsed[n]) {
-                    console.log(btn[i])
+                    // console.log(btn[i])
                     btn[i].style.backgroundColor = 'rgb(204, 109, 0)';
                     btn[i].innerHTML = 'Убрать из корзины';
             }
@@ -63,7 +72,7 @@ if( numIndex === 0 ){
 
 if ( numIndex < 0 ){numIndex = 0};
 
-console.log(numIndex)
+// console.log(numIndex)
 btn.forEach((item, i)  => {
         item.onclick = () => {
 
@@ -107,3 +116,53 @@ btn.forEach((item, i)  => {
         }
     }
 )
+// ===========================================
+// const prodContainer: HTMLElement = document.querySelector('.prod-container');
+const chosedProduct: NodeListOf<Element> = document.querySelectorAll('.producr-cart__img');
+let addNum;
+chosedProduct.forEach((item,i) => {
+    chosedProduct[i].onclick = () => {
+        // window.location.href = '../pages/product.html';
+        section.style.backgroundColor = '#ffffff'
+        section.innerHTML = `
+        <div class="prod-container">
+        <div class="block-1"></div>
+        <!--  -->
+        <div class="prod-main-block flex">
+            <div class="prod-img-block">  
+                <div class="prod-img-demo flex-reg">
+                    <img src="${catalog[i].img}" alt="">
+                </div>
+                <div class="prod-img-line flex">
+                    <div>
+                    <img src="${catalog[i].img}" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="prod-cost-block flex">
+                <div class="prod-cost-block__center">
+                    <div class="prod-cost-block__name">
+                        <span>
+                        ${catalog[i].name}
+                        </span>
+                    </div>
+                    <div class="sumOfCost">
+                        <span>${catalog[i].prise}</span>
+                    </div>
+                    <div class="count">
+                        <input type="">
+                    </div>
+                    <div class="pay-wrap">
+                        <div class="pay-btn">Добавить в корзину</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="description-comments"></div>
+        </div>
+`;
+
+    }
+})
